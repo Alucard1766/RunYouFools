@@ -1,6 +1,15 @@
 # RunYouFools
 Learning Project
 
+@mauruskuehne Lueg der da mal ah.. (mentiontest :D)
+##ToDo List
+* [ ] Create Map - Luca
+* [ ] Create Player - Mau
+* [ ] Graphics for Map/Player - Luca
+* [ ] Create Powerups - TBD
+* [ ] Create Menus - TBD
+* [ ] Testing
+
 ##To Discuss
 * IDE
 * Naming Conventions
@@ -8,7 +17,7 @@ Learning Project
 * Folder structure
 
 ###Game related
-* Map structure
+* Levels
 * Features (Must, Nice to have
   * StateManager - *Nice to have? See bottom "States"*
     * MainMenu
