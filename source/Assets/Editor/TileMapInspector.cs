@@ -12,6 +12,7 @@ public class TileMapInspector : Editor {
 		if(GUILayout.Button("Regenerate")) {
 			TileMapGraphics tileMap = (TileMapGraphics)target;
 			tileMap.BuildMesh();
+			tileMap.AssignTextures();
 		}
 	}
 }

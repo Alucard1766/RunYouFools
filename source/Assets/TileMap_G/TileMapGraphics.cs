@@ -13,16 +13,55 @@ public class TileMapGraphics : MonoBehaviour {
 	public Texture2D tileSet;
 	public int tileResolutionInPx;
 
-
+	TileData_Map tileMap;
+	
 	void Start() {
 		BuildMesh();
 
-		//TODO: TileData_Map Objekt erstellen
-		//TODO: Texturen zuweisen
+		AssignTextures ();
 	}
 
-	void AssignTextures(){
+	Color[][] ChopTiles() {
+		int numTilesPerRow = tileSet.width / tileResolutionInPx;
+		int numRows = tileSet.height / tileResolutionInPx;
 
+		Color[][] tiles = new Color[numTilesPerRow * numRows][];
+
+		for (int y = 0; y < numRows; y++) {
+			for (int x = 0; x < numTilesPerRow; x++) {
+				tiles[y*numTilesPerRow + x] = tileSet.GetPixels(x * tileResolutionInPx, y * tileResolutionInPx, tileResolutionInPx, tileResolutionInPx);
+			}
+		}
+		return tiles;
+	}
+
+
+	public void AssignTextures(){
+
+		tileMap = new TileData_Map (size_y, size_x);
+
+		int texWidth = size_x * tileResolutionInPx;
+		int texHeight = size_y * tileResolutionInPx;
+
+		Texture2D texture = new Texture2D (texWidth, texHeight);
+
+		Color[][] tiles = ChopTiles ();
+
+		for (int x = 0; x < size_x; x++) {
+			for (int y = 0; y < size_y; y++) {
+				Color[] p = tiles[tileMap.GetTileAtCoord(x,y)];
+				texture.SetPixels(x * tileResolutionInPx, y * tileResolutionInPx, tileResolutionInPx, tileResolutionInPx, p);
+			}
+		}
+
+		texture.filterMode = FilterMode.Point;
+		texture.wrapMode = TextureWrapMode.Clamp;
+		texture.Apply ();
+
+		MeshRenderer mesh_renderer = GetComponent<MeshRenderer> ();
+		mesh_renderer.sharedMaterials[0].mainTexture = texture;
+
+		Debug.Log ("DoneTexture");
 	}
 
 
@@ -84,9 +123,6 @@ public class TileMapGraphics : MonoBehaviour {
 		mesh_collider.sharedMesh = mesh;
 
 		Debug.Log ("DoneMesh");
-		int test = 12;
-		string test2 = "map" + test.ToString ();
-		Debug.Log (test2);
 
 		//Call Method to Assign Vertecies to Texture
 	}

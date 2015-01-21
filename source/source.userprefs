@@ -1,10 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\TileMap_G\TileMapGraphics.cs">
     <Files>
-      <File FileName="Assets\TileMap_D\TileData_Map.cs" Line="26" Column="1" />
-      <File FileName="Assets\Editor\TileMapInspector.cs" Line="14" Column="24" />
-      <File FileName="Assets\TileMap_G\TileMapGraphics.cs" Line="21" Column="28" />
+      <File FileName="Assets\TileMap_D\TileData_Map.cs" Line="42" Column="3" />
+      <File FileName="Assets\Editor\TileMapInspector.cs" Line="15" Column="29" />
+      <File FileName="Assets\TileMap_G\TileMapGraphics.cs" Line="101" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
