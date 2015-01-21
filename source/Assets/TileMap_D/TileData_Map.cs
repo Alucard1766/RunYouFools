@@ -1,22 +1,48 @@
 ﻿
 public class TileData_Map {
-	TileData_Tile[] tiles;
+
+	public const int PLAIN = 0;
+	public const int WALL = 10;
+
+
+
 	int height;
 	int width;
 
+	int[,] map_data;
 
-	public TileData_Map(int height, int width){
+	int[,] map1 = new int[11,20]
+		{{10,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,10},
+		{10,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,10},
+		{10,10,10,10,0,0,0,0,0,0,0,0,0,0,0,0,10,10,10,10},
+		{10,10,10,10,0,0,0,0,0,0,0,0,0,0,0,0,10,10,10,10},
+		{10,10,10,10,0,0,0,0,0,0,0,0,0,0,0,0,10,10,10,10},
+		{10,10,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,10,10},
+		{10,10,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,10,10},
+		{10,10,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,10,10},
+		{10,10,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,10,10},
+		{10,10,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,10,10},
+		{10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10}}; 
+
+
+	public TileData_Map(int height, int width, int mapNr){
 		this.height = height;
 		this.width = width;
 
-		tiles = new TileData_Tile[ this.height * this.width ];
+		map_data = new int[height, width];
+
+		string mapName = "map" + mapNr.ToString();
+		WriteMapData (mapName);
+
+
 	}
 
-	public TileData_Tile GetTileFromCoord(int x, int y) {
+	void WriteMapData (string mapName)
+	{
+		map_data = map1;//TODO: Map mapName (Via List??)
+	}
 
-		if (x < 0 || y < 0 || x >= width || y >= height) {
-			return null; //TODO: Errorhandling mit MAU besprechen
-		}
-		return tiles[ y * width + x];
+	public int GetTileAtCoord(int x, int y){ //TODO: Discuss Errorhandling
+		return map_data[y,x];
 	}
 }
