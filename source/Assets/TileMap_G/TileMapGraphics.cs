@@ -50,7 +50,8 @@ public class TileMapGraphics : MonoBehaviour {
 		for (int x = 0; x < size_x; x++) {
 			for (int y = 0; y < size_y; y++) {
 				Color[] p = tiles[tileMap.GetTileAtCoord(x,y)];
-				texture.SetPixels(x * tileResolutionInPx, y * tileResolutionInPx, tileResolutionInPx, tileResolutionInPx, p);
+				//texture.SetPixels(x * tileResolutionInPx, y * tileResolutionInPx, tileResolutionInPx, tileResolutionInPx, p);
+				texture.SetPixels(x * tileResolutionInPx,((size_y - 1) * tileResolutionInPx) - (y * tileResolutionInPx), tileResolutionInPx, tileResolutionInPx, p); //Spiegelung an X-Achse
 			}
 		}
 
@@ -84,7 +85,7 @@ public class TileMapGraphics : MonoBehaviour {
 		int x, y;
 		for (y = 0; y < vertSize_y; y++) {
 			for (x = 0; x < vertSize_x; x++) {
-				vertices[y * vertSize_x + x] = new Vector3(x * tileSize, -y * tileSize, 0);
+				vertices[y * vertSize_x + x] = new Vector3(x * tileSize, -y * tileSize, 5); //Tiles in den Hintergrund
 				normals[y * vertSize_x + x]  = new Vector3(0, 0, -1);
 				uv[y * vertSize_x + x]		 = new Vector2((float)x / size_x, 1f - (float)y / size_y);
 			}
@@ -123,7 +124,5 @@ public class TileMapGraphics : MonoBehaviour {
 		mesh_collider.sharedMesh = mesh;
 
 		Debug.Log ("DoneMesh");
-
-		//Call Method to Assign Vertecies to Texture
 	}
 }
