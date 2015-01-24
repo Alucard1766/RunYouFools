@@ -45,10 +45,6 @@ Material:
         second: .078125
       data:
         first:
-          name: _Parallax
-        second: .0199999996
-      data:
-        first:
           name: _Stencil
         second: 0
       data:
@@ -71,6 +67,10 @@ Material:
         first:
           name: _ColorMask
         second: 15
+      data:
+        first:
+          name: _Parallax
+        second: .0199999996
     m_Colors:
       data:
         first:

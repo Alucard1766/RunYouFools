@@ -11,7 +11,7 @@ public class TileData_Map {
 	int height;
 	int width;
 
-	int[,] currentMapDataLayer0;
+	int[,] currentMapDataLayer;
 
 	int[,] map0Layer0 = new int[11,20]
 		{{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1},
@@ -27,17 +27,17 @@ public class TileData_Map {
 		{0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}};
 
 
-	public TileData_Map(int height, int width){
+	public TileData_Map(int[,] mapData){
 		//this.height = height;
 		//this.width = width;
 
-		currentMapDataLayer0 = new int[height, width];
-		currentMapDataLayer0 = map0Layer0;
+		currentMapDataLayer = mapData;
+		//currentMapDataLayer = map0Layer0;
 
 	}
 
 
 	public int GetTileAtCoord(int x, int y){ //TODO: Discuss Errorhandling
-		return currentMapDataLayer0[y,x];
+		return currentMapDataLayer[y,x];
 	}
 }

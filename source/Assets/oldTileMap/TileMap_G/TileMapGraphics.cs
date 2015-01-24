@@ -14,12 +14,29 @@ public class TileMapGraphics : MonoBehaviour {
 	public Texture2D tileSet;
 	public int tileResolutionInPx;
 
+	public TextAsset mapTextData;
+
+	int[,] mapData;
 	TileData_Map tileMap;
 	
-	void Start() {
+	public void Start() {
+		mapData = new int[size_y,size_x];
+		ReadTextAssets ();
+
 		BuildMesh();
 
 		AssignTextures ();
+	}
+
+	void ReadTextAssets ()
+	{
+		string[] chars = mapTextData.text.Split (',');
+		for (int y = 0; y < size_y; y++) {
+			for (int x = 0; x < size_x; x++) {
+				mapData[y,x] = int.Parse(chars[y * size_x + x]);
+				Debug.Log(y + ", " + x + ", " + chars[y * size_x + x]);
+			}
+		}
 	}
 
 	Color[][] ChopTiles() {
@@ -39,7 +56,7 @@ public class TileMapGraphics : MonoBehaviour {
 
 	public void AssignTextures(){
 
-		tileMap = new TileData_Map (size_y, size_x);
+		tileMap = new TileData_Map (mapData);
 
 		int texWidth = size_x * tileResolutionInPx;
 		int texHeight = size_y * tileResolutionInPx;
@@ -86,7 +103,7 @@ public class TileMapGraphics : MonoBehaviour {
 		int x, y;
 		for (y = 0; y < vertSize_y; y++) {
 			for (x = 0; x < vertSize_x; x++) {
-				vertices[y * vertSize_x + x] = new Vector3(x * tileSize, -y * tileSize, -layerLevel*10); //Tiles in den Hintergrund
+				vertices[y * vertSize_x + x] = new Vector3(x * tileSize, -y * tileSize, 1-layerLevel); //Tiles in den Hintergrund
 				normals[y * vertSize_x + x]  = new Vector3(0, 0, -1);
 				uv[y * vertSize_x + x]		 = new Vector2((float)x / size_x, 1f - (float)y / size_y);
 			}
