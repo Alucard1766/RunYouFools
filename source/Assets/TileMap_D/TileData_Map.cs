@@ -1,19 +1,21 @@
-﻿
+﻿using System.Collections.Generic;
+
+
 public class TileData_Map {
 
-	public const int PLAIN = 0;
-	public const int WALL = 10;
-
-
+	/*
+	 * 0 = Floor
+	 * 1 = Wall
+	*/
 
 	int height;
 	int width;
 
-	int[,] map_data;
+	int[,] currentMapDataLayer0;
 
-	int[,] map1 = new int[11,20]
-		{{0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1},
-		{0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1},
+	int[,] map0Layer0 = new int[11,20]
+		{{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1},
+		{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1},
 		{0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1},
 		{0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1},
 		{0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1},
@@ -22,26 +24,20 @@ public class TileData_Map {
 		{0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1},
 		{0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1},
 		{0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1},
-		{0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}}; 
+		{0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}};
 
 
 	public TileData_Map(int height, int width){
-		this.height = height;
-		this.width = width;
+		//this.height = height;
+		//this.width = width;
 
-		map_data = new int[height, width];
-		
-		WriteMapData (map1);
-
+		currentMapDataLayer0 = new int[height, width];
+		currentMapDataLayer0 = map0Layer0;
 
 	}
 
-	void WriteMapData (int[,] mapName)
-	{
-		map_data = mapName;
-	}
 
 	public int GetTileAtCoord(int x, int y){ //TODO: Discuss Errorhandling
-		return map_data[y,x];
+		return currentMapDataLayer0[y,x];
 	}
 }
