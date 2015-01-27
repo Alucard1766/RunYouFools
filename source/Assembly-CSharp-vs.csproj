@@ -73,7 +73,7 @@
      <Compile Include="Assets\_Scripts\oldTileMap\TileMap_D\TileData_Tile.cs" />
      <Compile Include="Assets\_Scripts\oldTileMap\TileMap_G\TileMapGraphics.cs" />
      <None Include="Assets\X-UniTMX\ObjectTypesForTiled.xml" />
-     <None Include="Assets\Resources\Testmap.xml" />
+     <None Include="Assets\Resources\TileSetTest.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>

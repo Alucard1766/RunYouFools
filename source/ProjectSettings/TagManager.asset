@@ -37,15 +37,23 @@ TagManager:
   User Layer 30: 
   User Layer 31: 
   m_SortingLayers:
+  - name: Background
+    userID: 1
+    uniqueID: 1282734545
+    locked: 0
+  - name: ObstacleBase
+    userID: 2
+    uniqueID: 1371714423
+    locked: 0
+  - name: PowerUp
+    userID: 3
+    uniqueID: 3182581667
+    locked: 0
   - name: Default
     userID: 0
     uniqueID: 0
     locked: 0
-  - name: PlayerLayer
-    userID: 1
-    uniqueID: 1282734545
-    locked: 0
-  - name: Background
-    userID: 2
-    uniqueID: 1371714423
+  - name: ObstacleForeground
+    userID: 4
+    uniqueID: 1946628413
     locked: 0

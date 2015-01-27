@@ -21,8 +21,4 @@ public class WalkingBehaviour : MonoBehaviour {
 		rigidbody2D.velocity = new Vector2(Mathf.Lerp(0, Input.GetAxis("Horizontal") * Speed, 0.8f),
 		                                   Mathf.Lerp(0, Input.GetAxis("Vertical") * Speed, 0.8f));
 	}
-	
-	void OnCollisionEnter2D(Collision2D collision){
-		Debug.Log ("Collision2d");
-	}
 }
