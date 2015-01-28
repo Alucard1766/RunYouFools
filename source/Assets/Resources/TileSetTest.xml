@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="25" height="60" tilewidth="16" tileheight="16" nextobjectid="26">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="25" height="60" tilewidth="16" tileheight="16" nextobjectid="30">
  <tileset firstgid="1" name="Grounds" tilewidth="16" tileheight="16">
   <image source="tilea2.png" width="512" height="384"/>
  </tileset>
@@ -276,6 +276,10 @@
   <object id="12" x="15.1515" y="303.424" width="64.1818" height="63.7273"/>
   <object id="23" x="228.182" y="553.758" width="25.8182" height="21.8485"/>
   <object id="24" x="337.848" y="647.091" width="28.4848" height="24.5152"/>
+  <object id="26" x="-14" y="2" width="11.5" height="957"/>
+  <object id="27" x="400.917" y="-1.16667" width="11.5" height="957"/>
+  <object id="28" x="-4.41667" y="-21.1667" width="406.167" height="23.6667"/>
+  <object id="29" x="-1.75" y="960.167" width="406.167" height="23.6667"/>
  </objectgroup>
  <objectgroup name="Trigger">
   <object id="15" x="288" y="895.333">
