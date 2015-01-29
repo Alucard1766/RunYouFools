@@ -8,6 +8,7 @@ public class PowerUpBehaviour : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Debug.Log ("Message from PowerUp: Script loaded with type: " + powerUpType + "!!");
+
 	}
 
 }

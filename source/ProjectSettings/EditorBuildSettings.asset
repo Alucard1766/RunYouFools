@@ -6,42 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/X-UniTMX Examples/StartingScene.unity
+    path: Assets/_Scenes/sceneGameMenu.unity
   - enabled: 1
-    path: Assets/X-UniTMX Examples/GameScene-TopView/Scenes/GameTopViewGameOver.unity
-  - enabled: 1
-    path: Assets/X-UniTMX Examples/GameScene-TopView/Scenes/GameTopView.unity
-  - enabled: 1
-    path: Assets/X-UniTMX Examples/OtherExampleScenes/OrthoMapStaticLoaded.unity
-  - enabled: 1
-    path: Assets/X-UniTMX Examples/OtherExampleScenes/OrthoMapStaticLoadedWithTileCollisions.unity
-  - enabled: 1
-    path: Assets/X-UniTMX Examples/OtherExampleScenes/OrthoMapLoadingOnSceneStart.unity
-  - enabled: 1
-    path: Assets/X-UniTMX Examples/OtherExampleScenes/OrthoMapLoadingFromScript.unity
-  - enabled: 1
-    path: Assets/X-UniTMX Examples/OtherExampleScenes/OrthoMapLoadingFromScriptRenderOrder.unity
-  - enabled: 1
-    path: Assets/X-UniTMX Examples/OtherExampleScenes/OrthoMapLoadStressTest.unity
-  - enabled: 1
-    path: Assets/X-UniTMX Examples/OtherExampleScenes/OrthoMapStreamedAssetsTest.unity
-  - enabled: 1
-    path: Assets/X-UniTMX Examples/OtherExampleScenes/IsoMapSimpleTest.unity
-  - enabled: 1
-    path: Assets/X-UniTMX Examples/OtherExampleScenes/IsoMapLoadingOnSceneStart.unity
-  - enabled: 1
-    path: Assets/X-UniTMX Examples/OtherExampleScenes/IsoMapSimpleTestWithDifPerspective1.unity
-  - enabled: 1
-    path: Assets/X-UniTMX Examples/OtherExampleScenes/IsoMapSimpleTestWithDifPerspective2.unity
-  - enabled: 1
-    path: Assets/X-UniTMX Examples/OtherExampleScenes/StaggeredMapLoadingOnSceneStart.unity
-  - enabled: 1
-    path: Assets/X-UniTMX Examples/GameScene-TopView/Scenes/GameTopViewMenu.unity
-  - enabled: 1
-    path: Assets/X-UniTMX Examples/GameScene-Plataform/Scenes/Game2DPlatform.unity
-  - enabled: 1
-    path: Assets/X-UniTMX Examples/GameScene-3DPlataform/Scenes/Game3DPlatform.unity
-  - enabled: 1
-    path: Assets/X-UniTMX Examples/GameScene-TileColliderPlatform/Scene/GameTileCollider2DPlatform.unity
-  - enabled: 1
-    path: Assets/X-UniTMX Examples/GameScene-Isometric/Scenes/GameScene-Isometric-Test.unity
+    path: Assets/_Scenes/scene1.unity

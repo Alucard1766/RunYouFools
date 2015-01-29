@@ -2367,8 +2367,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2043726680}
-  - 114: {fileID: 2043726681}
   - 114: {fileID: 2043726682}
+  - 114: {fileID: 2043726681}
   m_Layer: 0
   m_Name: Tiled Game Map
   m_TagString: Untagged

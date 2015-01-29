@@ -20,9 +20,7 @@ public class InitializeTilemap : MonoBehaviour {
 
 			switch (triggerObject.Properties["TriggerType"].RawValue) {
 			case "Finish":
-				Debug.Log ("Creating finish line now");
 				GameObject.Find(triggerObject.Name).AddComponent("FinishBehaviour");
-				Debug.Log ("Done creating finish line");
 				break;
 
 			case "Start":
@@ -41,8 +39,5 @@ public class InitializeTilemap : MonoBehaviour {
 
 			}
 		}
-
-		
-
 	} 
 }
