@@ -1,10 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\WalkingBehaviour.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\InitializeTilemap.cs">
     <Files>
-      <File FileName="Assets\Resources\TileSetTest.xml" Line="289" Column="12" />
-      <File FileName="Assets\_Scripts\CamFollowsPlayer.cs" Line="9" Column="68" />
-      <File FileName="Assets\_Scripts\WalkingBehaviour.cs" Line="18" Column="1" />
+      <File FileName="Assets\_Scripts\InitializeTilemap.cs" Line="15" Column="90" />
+      <File FileName="e:\Projekte\RunYouFools\source\Assets\X-UniTMX\Code\Map.cs" Line="309" Column="39" />
+      <File FileName="Assets\X-UniTMX\Code\MapObject.cs" Line="104" Column="16" />
+      <File FileName="Assets\X-UniTMX\NanoXML\NanoXMLParser.cs" Line="1" Column="1" />
+      <File FileName="Assets\X-UniTMX\Code\PropertyCollection.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\FinishBehaviour.cs" Line="8" Column="3" />
+      <File FileName="Assets\Editor\InspectorInitTileMap.cs" Line="16" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -2368,6 +2368,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2043726680}
   - 114: {fileID: 2043726681}
+  - 114: {fileID: 2043726682}
   m_Layer: 0
   m_Name: Tiled Game Map
   m_TagString: Untagged
@@ -2447,6 +2448,18 @@ MonoBehaviour:
   tileLayersFoldoutProperties: 00000000
   objectLayersFoldoutProperties: 0000
   imageLayersFoldoutProperties: 
+--- !u!114 &2043726682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2043726679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f812cd63e7e04534d9b15474a2c37f2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerObjectLayerName: Trigger
 --- !u!21 &2117521637
 Material:
   serializedVersion: 3
