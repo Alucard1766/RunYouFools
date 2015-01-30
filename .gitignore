@@ -19,3 +19,4 @@ sysinfo.txt
 *.csproj
 
 *.sln
+*.userprefs
