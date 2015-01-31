@@ -20,7 +20,9 @@ public class InitializeTilemap : MonoBehaviour {
 
 			switch (triggerObject.Properties["TriggerType"].RawValue) {
 			case "Finish":
-				GameObject.Find(triggerObject.Name).AddComponent("FinishBehaviour");
+				var finishLineObject = GameObject.Find(triggerObject.Name);
+				finishLineObject.AddComponent("FinishBehaviour");
+				GameObject.Find("Ranking").GetComponent<RankingManager>().SetFinishline(finishLineObject.transform);
 				break;
 
 			case "Start":
