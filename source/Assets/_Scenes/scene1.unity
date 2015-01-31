@@ -1244,7 +1244,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
+  m_Sprite: {fileID: 21300006, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!50 &729264726
 Rigidbody2D:
@@ -1257,7 +1257,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
-  m_FixedAngle: 1
+  m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -2534,6 +2534,15 @@ Prefab:
       propertyPath: UIPowerUpImage
       value: 
       objectReference: {fileID: 1721843978}
+    - target: {fileID: 5017146, guid: 9f3a38a9f7846f449bb9213099f319fe, type: 2}
+      propertyPath: m_FixedAngle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21217146, guid: 9f3a38a9f7846f449bb9213099f319fe, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300006, guid: 6fdfb3641affb41ae862c1f8167e55bb,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9f3a38a9f7846f449bb9213099f319fe, type: 2}
   m_RootGameObject: {fileID: 729264722}

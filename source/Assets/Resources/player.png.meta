@@ -54,80 +54,80 @@ TextureImporter:
     - name: player_0
       rect:
         serializedVersion: 2
-        x: 40
-        y: 458
-        width: 85
-        height: 62
+        x: 45
+        y: 167
+        width: 93
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: player_1
       rect:
         serializedVersion: 2
-        x: 140
-        y: 420
-        width: 85
-        height: 100
+        x: 169
+        y: 155
+        width: 100
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: player_2
       rect:
         serializedVersion: 2
-        x: 33
-        y: 301
-        width: 86
-        height: 101
+        x: 301
+        y: 146
+        width: 101
+        height: 86
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: player_3
       rect:
         serializedVersion: 2
-        x: 135
-        y: 328
-        width: 95
-        height: 64
+        x: 458
+        y: 140
+        width: 62
+        height: 85
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: player_4
       rect:
         serializedVersion: 2
-        x: 26
-        y: 169
-        width: 84
-        height: 100
+        x: 45
+        y: 5
+        width: 96
+        height: 131
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: player_5
       rect:
         serializedVersion: 2
-        x: 142
-        y: 179
-        width: 75
-        height: 101
+        x: 179
+        y: 48
+        width: 101
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: player_6
       rect:
         serializedVersion: 2
-        x: 28
-        y: 45
-        width: 70
-        height: 93
+        x: 328
+        y: 35
+        width: 64
+        height: 95
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: player_7
       rect:
         serializedVersion: 2
-        x: 129
-        y: 45
-        width: 131
-        height: 96
+        x: 420
+        y: 40
+        width: 100
+        height: 85
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
