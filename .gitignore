@@ -20,3 +20,5 @@ sysinfo.txt
 
 *.sln
 *.userprefs
+
+source/source.userprefs
