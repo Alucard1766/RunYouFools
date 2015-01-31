@@ -1,21 +1,24 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PowerUpManager : MonoBehaviour {
 
-	public UnityEngine.UI.Image UIPowerUpImage;
+	public Image UIPowerUpImage;
 	public Sprite beerImage;
 	public Sprite swordImage;
 
 
 	private bool hasPowerup;
 	private string currentPowerUp;
-	private Hashtable collectionPowerUpImagesByString;
+	private Dictionary<string, Sprite> collectionPowerUpImagesByString;
 
 
 	void Start () {
 		hasPowerup = false;
-		collectionPowerUpImagesByString = new Hashtable ();
+
+		collectionPowerUpImagesByString = new Dictionary<string, Sprite>();
 		collectionPowerUpImagesByString.Add ("Sword", swordImage);
 		collectionPowerUpImagesByString.Add ("Beer", beerImage);
 	}

@@ -29,12 +29,12 @@ public class InitializeTilemap : MonoBehaviour {
 				GameObject.Find(triggerObject.Name).AddComponent("StartBehaviour");
 				break;
 
-			case "PowerUp":
-				var powerUpObject = GameObject.Find(triggerObject.Name);
-				powerUpObject.AddComponent("PowerUpBehaviour");
-				powerUpObject.GetComponent<PowerUpBehaviour>().powerUpType = triggerObject.Properties["PowerupType"].RawValue;
-
-				break;
+//			case "PowerUp":
+//				var powerUpObject = GameObject.Find(triggerObject.Name);
+//				powerUpObject.AddComponent("PowerUpBehaviour");
+//				powerUpObject.GetComponent<PowerUpBehaviour>().powerUpType = triggerObject.Properties["PowerupType"].RawValue;
+//
+//				break;
 
 			default:
 				break;
