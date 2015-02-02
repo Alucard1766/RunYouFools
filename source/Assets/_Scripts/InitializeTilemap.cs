@@ -22,7 +22,7 @@ public class InitializeTilemap : MonoBehaviour {
 			case "Finish":
 				var finishLineObject = GameObject.Find(triggerObject.Name);
 				finishLineObject.AddComponent("FinishBehaviour");
-				GameObject.Find("Ranking").GetComponent<RankingManager>().SetFinishline(finishLineObject.transform);
+				GameObject.Find("Ranking").GetComponent<RankingUIManager>().SetFinishline(finishLineObject.transform);
 				break;
 
 			case "Start":

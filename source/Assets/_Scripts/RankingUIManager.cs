@@ -1,7 +1,7 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
-public class RankingManager : MonoBehaviour {
+public class RankingUIManager : MonoBehaviour {
 
 	public Transform player1;
 	public Transform player2;

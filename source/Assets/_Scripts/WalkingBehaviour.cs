@@ -4,7 +4,8 @@ using System.Collections;
 public class WalkingBehaviour : MonoBehaviour {
 	
 	public float Speed;
-	
+	public int playerNr;
+
 	private SpriteRenderer _spriteRenderer;
 	
 	// Use this for initialization
@@ -16,6 +17,7 @@ public class WalkingBehaviour : MonoBehaviour {
 	void Update () {
 		var horizontalSpeed = Input.GetAxis("Horizontal");
 		var verticalSpeed = Input.GetAxis("Vertical");
+
 		
 		
 		rigidbody2D.velocity = new Vector2(Mathf.Lerp(0, horizontalSpeed * Speed, 0.8f),
