@@ -6,11 +6,9 @@ public class WalkingBehaviour : MonoBehaviour {
 	public float Speed;
 	public int playerNr;
 
-	private SpriteRenderer _spriteRenderer;
 	
 	// Use this for initialization
 	void Start () {
-		_spriteRenderer = GetComponent<SpriteRenderer>();
 	}
 	
 	// Update is called once per frame
@@ -36,6 +34,13 @@ public class WalkingBehaviour : MonoBehaviour {
 			rigidbody2D.MoveRotation(90);
 		if(rigidbody2D.velocity.y < 0)
 			rigidbody2D.MoveRotation(270);
+		}
+
+
+		if(rigidbody2D.velocity.x > 0.1 && rigidbody2D.velocity.y > 0.1) {
+			this.GetComponent<Animation2D>().IsRunning = true;
+		} else {
+			this.GetComponent<Animation2D>().IsRunning = false;
 		}
 
 		//transform.Rotate(Vector3.forward, 90); 

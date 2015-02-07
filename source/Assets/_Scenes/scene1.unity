@@ -1326,6 +1326,7 @@ GameObject:
   - 212: {fileID: 729264725}
   - 50: {fileID: 729264726}
   - 61: {fileID: 729264727}
+  - 114: {fileID: 729264728}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1410,6 +1411,27 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .760476232, y: .502307177}
   m_Center: {x: -.0447602272, y: -.0388462543}
+--- !u!114 &729264728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 729264722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8954f47a3b0c4859b0aece78373d9e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsRunning: 0
+  frames:
+  - duration: 1
+    texture: {fileID: 21300010, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
+  - duration: 1
+    texture: {fileID: 21300002, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
+  - duration: 1
+    texture: {fileID: 21300004, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
+  - duration: 1
+    texture: {fileID: 21300014, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
 --- !u!1 &737100117
 GameObject:
   m_ObjectHideFlags: 0
