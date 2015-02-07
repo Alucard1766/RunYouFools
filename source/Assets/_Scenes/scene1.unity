@@ -1327,6 +1327,7 @@ GameObject:
   - 50: {fileID: 729264726}
   - 61: {fileID: 729264727}
   - 114: {fileID: 729264728}
+  - 114: {fileID: 729264729}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1423,6 +1424,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6f7374c0794d51439f1569c93972015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &729264729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 729264722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8954f47a3b0c4859b0aece78373d9e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseSprite: {fileID: 21300006, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
+  frames:
+  - duration: .200000003
+    texture: {fileID: 21300002, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
+  - duration: .200000003
+    texture: {fileID: 21300004, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
+  - duration: .200000003
+    texture: {fileID: 21300010, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
+  - duration: .200000003
+    texture: {fileID: 21300014, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
 --- !u!1 &737100117
 GameObject:
   m_ObjectHideFlags: 0
