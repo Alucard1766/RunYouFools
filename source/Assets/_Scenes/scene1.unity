@@ -1543,6 +1543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 729264724}
   player2: {fileID: 344397974}
+  distance: 1.01999998
 --- !u!1 &828042395
 GameObject:
   m_ObjectHideFlags: 0

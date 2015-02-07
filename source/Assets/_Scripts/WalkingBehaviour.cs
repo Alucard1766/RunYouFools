@@ -37,7 +37,7 @@ public class WalkingBehaviour : MonoBehaviour {
 		}
 
 
-		if(rigidbody2D.velocity.x > 0 || rigidbody2D.velocity.y > 0) {
+		if(rigidbody2D.velocity != Vector2.zero) {
 			this.GetComponent<Animation2D>().IsRunning = true;
 		} else {
 			this.GetComponent<Animation2D>().IsRunning = false;
