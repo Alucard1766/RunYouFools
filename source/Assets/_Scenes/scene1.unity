@@ -1422,15 +1422,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8954f47a3b0c4859b0aece78373d9e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsRunning: 0
+  PauseSprite: {fileID: 21300006, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
   frames:
-  - duration: 1
+  - duration: .25
     texture: {fileID: 21300010, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
-  - duration: 1
+  - duration: .25
     texture: {fileID: 21300002, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
-  - duration: 1
+  - duration: .25
     texture: {fileID: 21300004, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
-  - duration: 1
+  - duration: .25
     texture: {fileID: 21300014, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
 --- !u!1 &737100117
 GameObject:

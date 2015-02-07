@@ -17,6 +17,8 @@ public class Animation2D : MonoBehaviour {
 		}
 	}
 
+	public Sprite PauseSprite;
+
 	public List<AnimationPart> frames;
 
 
@@ -36,6 +38,11 @@ public class Animation2D : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if(!IsRunning){
+			this.GetComponent<SpriteRenderer>().sprite = PauseSprite;
+			return;
+		}
 	
 		_timeSinceLastFrame += Time.deltaTime;
 
