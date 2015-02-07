@@ -13,6 +13,7 @@ GameObject:
   - 50: {fileID: 5017146}
   - 61: {fileID: 6117146}
   - 114: {fileID: 11421496}
+  - 114: {fileID: 11412146}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -42,7 +43,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
-  m_FixedAngle: 1
+  m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -58,6 +59,27 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .760476232, y: .502307177}
   m_Center: {x: -.0447602272, y: -.0388462543}
+--- !u!114 &11412146
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8954f47a3b0c4859b0aece78373d9e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseSprite: {fileID: 21300006, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
+  frames:
+  - duration: .200000003
+    texture: {fileID: 21300002, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
+  - duration: .200000003
+    texture: {fileID: 21300004, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
+  - duration: .200000003
+    texture: {fileID: 21300010, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
+  - duration: .200000003
+    texture: {fileID: 21300014, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
 --- !u!114 &11417146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -70,7 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 7
-  playerNr: 0
+  playerNr: 1
 --- !u!114 &11421496
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -102,7 +124,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
+  m_Sprite: {fileID: 21300006, guid: 6fdfb3641affb41ae862c1f8167e55bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
