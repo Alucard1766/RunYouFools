@@ -12,7 +12,7 @@ GameObject:
   - 212: {fileID: 21217146}
   - 50: {fileID: 5017146}
   - 61: {fileID: 6117146}
-  - 114: {fileID: 11451934}
+  - 114: {fileID: 11421496}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -70,7 +70,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 7
---- !u!114 &11451934
+  playerNr: 0
+--- !u!114 &11421496
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -78,12 +79,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 117146}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db1df94b1c458d643a95ea029ad44159, type: 3}
+  m_Script: {fileID: 11500000, guid: b6f7374c0794d51439f1569c93972015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIPowerUpImage: {fileID: 0}
-  beerImage: {fileID: 21300000, guid: 6226254444195ba45b5943ecc3969684, type: 3}
-  swordImage: {fileID: 21300000, guid: 4c8ee26ec44e4474a82e53823914ae3a, type: 3}
 --- !u!212 &21217146
 SpriteRenderer:
   m_ObjectHideFlags: 1

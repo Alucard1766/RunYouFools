@@ -38,4 +38,14 @@ public class PowerUpUIManager : MonoBehaviour {
 			player2UIPowerUpImage.sprite = (Sprite)collectionPowerUpImagesByString[powerUpType];
 		}
 	}
+
+	public void RemovePowerUp(int playerNr) {
+		if (playerNr == 1) {
+			player1UIPowerUpImage.color = new Color(1,1,1,0);
+			player1UIPowerUpImage.sprite = new Sprite();
+		} else {
+			player2UIPowerUpImage.color = new Color(1,1,1,0);
+			player2UIPowerUpImage.sprite = new Sprite();
+		}
+	}
 }

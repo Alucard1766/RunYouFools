@@ -1326,6 +1326,7 @@ GameObject:
   - 212: {fileID: 729264725}
   - 50: {fileID: 729264726}
   - 61: {fileID: 729264727}
+  - 114: {fileID: 729264728}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1410,6 +1411,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .760476232, y: .502307177}
   m_Center: {x: -.0447602272, y: -.0388462543}
+--- !u!114 &729264728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11421496, guid: 9f3a38a9f7846f449bb9213099f319fe,
+    type: 2}
+  m_PrefabInternal: {fileID: 1543727280}
+  m_GameObject: {fileID: 729264722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6f7374c0794d51439f1569c93972015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &737100117
 GameObject:
   m_ObjectHideFlags: 0
@@ -2744,7 +2757,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11451934, guid: 9f3a38a9f7846f449bb9213099f319fe, type: 2}
+    - target: {fileID: 0}
       propertyPath: UIPowerUpImage
       value: 
       objectReference: {fileID: 1721843978}
@@ -2757,7 +2770,7 @@ Prefab:
       value: 
       objectReference: {fileID: 21300006, guid: 6fdfb3641affb41ae862c1f8167e55bb,
         type: 3}
-    - target: {fileID: 11451934, guid: 9f3a38a9f7846f449bb9213099f319fe, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -2766,7 +2779,7 @@ Prefab:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 11451934, guid: 9f3a38a9f7846f449bb9213099f319fe, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 9f3a38a9f7846f449bb9213099f319fe, type: 2}
   m_RootGameObject: {fileID: 729264722}
   m_IsPrefabParent: 0
