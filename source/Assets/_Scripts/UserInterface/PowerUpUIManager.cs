@@ -8,6 +8,7 @@ public class PowerUpUIManager : MonoBehaviour {
 
 	public Sprite beerImage;
 	public Sprite swordImage;
+	public Sprite lightningImage;
 
 	private Dictionary<string, Sprite> collectionPowerUpImagesByString;
 
@@ -21,6 +22,7 @@ public class PowerUpUIManager : MonoBehaviour {
 		collectionPowerUpImagesByString = new Dictionary<string, Sprite>();
 		collectionPowerUpImagesByString.Add ("Sword", swordImage);
 		collectionPowerUpImagesByString.Add ("Beer", beerImage);
+		collectionPowerUpImagesByString.Add ("Lightning", lightningImage);
 
 		player1Background = transform.FindChild("Player1Background").gameObject;
 		player2Background = transform.FindChild("Player2Background").gameObject;
